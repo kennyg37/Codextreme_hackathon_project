@@ -48,16 +48,7 @@
             <div class="services">
                 <div class="service">
                     <div class="service__icon">
-                        <box-icon name='user'></box-icon>
-                    </div>
-                    <div class="service__text">
-                        <h3 class="service__heading">User friendly</h3>
-                        <p class="service__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service__icon">
-                        <box-icon name='user'></box-icon>
+                        <i class="fa-solid fa-tooth"></i>
                     </div>
                     <div class="service__text">
                         <h3 class="service__heading">Dentist</h3>
@@ -66,7 +57,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon">
-                        <box-icon name='user'></box-icon>
+                        <i class="fa-solid fa-eye"></i>
                     </div>
                     <div class="service__text">
                         <h3 class="service__heading">Optician</h3>
@@ -75,7 +66,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon">
-                        <box-icon name='user'></box-icon>
+                        <i class="fa-solid fa-dog"></i>
                     </div>
                     <div class="service__text">
                         <h3 class="service__heading">Veterinarian</h3>
@@ -84,7 +75,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon">
-                        <box-icon name='user'></box-icon>
+                        <i class="fa-solid fa-dumbbell"></i>
                     </div>
                     <div class="service__text">
                         <h3 class="service__heading">Nutrition & Fitness</h3>
@@ -97,7 +88,7 @@
         <div class="container">
             <div class="doc-login">
                 <div class="doc-login__icon">
-                    <box-icon name='plus-medical'></box-icon>
+                    <i class="fa-solid fa-user-doctor"></i>
                 </div>
                 <div class="doc-login__text">
                     <h3 class="doc-login__heading">Doctor Login</h3>
@@ -107,7 +98,7 @@
             </div>
             <div class="patient-login">
                 <div class="patient-login__icon">
-                    <box-icon name='capsule' ></box-icon>
+                    <i class="fa-solid fa-hospital-user"></i>
                 </div>
                 <div class="patient-login__text">
                     <h3 class="patient-login__heading">Patient Login</h3>
@@ -117,5 +108,37 @@
             </div>
         </div>
     </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    
+                        <input type="text" class="form__input" placeholder="Name" id="name" name="Name">
+                        <label for="name" class="form__label">Full Name</label>
+                    
+                        <input type="email" class="form__input" placeholder="Email Address" id="email" name="Email" required>
+                        <label for="email" class="form__label">Email Address</label>
+                    
+                        <textarea name="Message" id="message" cols="30" rows="10" class="form__input" placeholder="Message"></textarea>
+                        
+                    
+                    
+                        <button class="btn btn--white">Send</button>
+                    </div>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<script src="scripts/index.js"></script>
 </body>
 </html>
