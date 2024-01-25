@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font-family: Poppins, sans-serif ;
 }
 body {
   margin: 0;
@@ -74,4 +77,76 @@ body {
 }
 .horizantal-line {
   border-bottom: 5px solid black;
+}
+
+
+
+#menu {
+  overflow: hidden; 
+  background-color: #0245A3;
+  height: 80px;
+  border-radius: 64px;
+}
+
+.logo {
+  float: left; 
+  margin: 22;
+  font-family: poppin;
+  
+}
+
+.navigation {
+  float: right; 
+  background-color:#0245A3 ;
+}
+
+nav ul {
+  list-style: none; 
+  margin: 20;
+  padding: 4;
+  color: #ffff;
+}
+
+nav ul li {
+  float: right; 
+  margin-right: 5px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffff; 
+  margin-top: 5px;
+  padding: 10px;
+}
+
+
+box-icon{
+padding: 5px;
+margin-left: 5px;
+color: #ffff;
+}
+.services{
+  display: flex;
+  gap: 30px;
+  
+  
+}
+.service{
+  background-color: #0245A3;
+  height: 120px;
+  width: 450px;
+  border-radius: 14px;
+  font-family: sans-serif;
+  color: #4ca0bc;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  color: #ffff;
+  
+}
+
+.service:hover{
+  background-color: rgb(10, 0, 101);
+  
 }
