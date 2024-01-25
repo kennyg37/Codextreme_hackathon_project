@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   border: 0;
-  font-family: Poppins, sans-serif ;
+  font-family: Poppins, sans-serif;
 }
 body {
   margin: 0;
@@ -107,60 +107,54 @@ body {
   border-bottom: 5px solid black;
 }
 
-
-
 #menu {
-  overflow: hidden; 
-  background-color: #0245A3;
+  overflow: hidden;
+  background-color: #0245a3;
   height: 80px;
   border-radius: 64px;
 }
 
 .logo {
-  float: left; 
+  float: left;
   margin: 22;
   font-family: poppin;
-  
 }
 
 .navigation {
-  float: right; 
-  background-color:#0245A3 ;
+  float: right;
+  background-color: #0245a3;
 }
 
 nav ul {
-  list-style: none; 
+  list-style: none;
   margin: 20;
   padding: 4;
   color: #ffff;
 }
 
 nav ul li {
-  float: right; 
-  margin-right: 5px; 
+  float: right;
+  margin-right: 5px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #ffff; 
+  color: #ffff;
   margin-top: 5px;
   padding: 10px;
 }
 
-
-box-icon{
-padding: 5px;
-margin-left: 5px;
-color: #ffff;
+box-icon {
+  padding: 5px;
+  margin-left: 5px;
+  color: #ffff;
 }
-.services{
+.services {
   display: flex;
   gap: 30px;
-  
-  
 }
-.service{
-  background-color: #0245A3;
+.service {
+  background-color: #0245a3;
   height: 120px;
   width: 450px;
   border-radius: 14px;
@@ -171,10 +165,52 @@ color: #ffff;
   padding-right: 8px;
   display: flex;
   color: #ffff;
-  
 }
 
-.service:hover{
+.service:hover {
   background-color: rgb(10, 0, 101);
-  
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+  background: #0245a3;
+}
+.spaces {
+  flex-basis: 35%;
+}
+.container-footer h1,
+.container-footer h3,
+.container-footer p {
+  color: #fff;
+}
+.map iframe {
+  width: 380px;
+  height: 250px;
+  border-radius: 10px;
+}
+.pages p {
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+.pages {
+  position: relative;
+  top: 25px;
+}
+.contacts p {
+  font-weight: 300;
+}
+.contacts-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.contacts {
+  position: relative;
+  left: 20px;
+  top: -15px;
 }
