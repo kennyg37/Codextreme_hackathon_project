@@ -54,3 +54,24 @@ body {
   text-decoration: none;
   color: #fff;
 }
+#section1 {
+  padding-top: 20px;
+  margin-left: 60px;
+  width: 90%;
+}
+.paragraph {
+  background: #0245a3;
+  border-radius: 64px;
+  display: flex;
+  justify-content: center;
+}
+.paragraph p {
+  color: #fff;
+  font-size: 24px;
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+}
+.horizantal-line {
+  border-bottom: 5px solid black;
+}
