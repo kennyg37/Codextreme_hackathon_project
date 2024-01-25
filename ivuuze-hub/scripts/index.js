@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/a/macros/alustudent.com/s/AKfycby50_BfBVnxiAsSdMvWQFD4oFldco33liCdW62S-qI1yLwOrF4SZeKIwImJWquHv3esFQ/exec'
+/*const scriptURL = 'https://script.google.com/a/macros/alustudent.com/s/AKfycby50_BfBVnxiAsSdMvWQFD4oFldco33liCdW62S-qI1yLwOrF4SZeKIwImJWquHv3esFQ/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg") 
 
@@ -13,4 +13,17 @@ form.addEventListener('submit', e => {
         form.reset()
     })
     .catch(error => console.error('Error!', error.message))
-})
+})*/
+
+document.getElementById('openSignupModal').addEventListener('click', function() {
+    document.getElementById('signupModal').style.display = 'block';
+});
+function closeModal() {
+    document.getElementById('signupModal').style.display = 'none';
+}
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('signupModal')) {
+        closeModal();
+    }
+});
