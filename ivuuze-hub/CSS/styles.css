@@ -75,3 +75,46 @@ body {
 .horizantal-line {
   border-bottom: 5px solid black;
 }
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+  background: #0245a3;
+}
+.spaces {
+  flex-basis: 35%;
+}
+.container-footer h1,
+.container-footer h3,
+.container-footer p {
+  color: #fff;
+}
+.map iframe {
+  width: 380px;
+  height: 250px;
+  border-radius: 10px;
+}
+.pages p {
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+.pages {
+  position: relative;
+  top: 25px;
+}
+.contacts p {
+  font-weight: 300;
+}
+.contacts-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.contacts {
+  position: relative;
+  left: 20px;
+  top: -15px;
+}
