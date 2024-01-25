@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/a/macros/alustudent.com/s/AKfycbyVjuewiVb1xA997Rzd-jSGH6hdaw0eMF0665CqS2-UgM5dxRxgwarQEz9AyITIMtrAvw/exec'
+const scriptURL = 'https://script.google.com/a/macros/alustudent.com/s/AKfycby50_BfBVnxiAsSdMvWQFD4oFldco33liCdW62S-qI1yLwOrF4SZeKIwImJWquHv3esFQ/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg") 
 
