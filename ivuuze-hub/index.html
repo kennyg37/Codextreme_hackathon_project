@@ -113,14 +113,31 @@
             <div class="footer__logo">
                 <img src="images/logo.jpg" alt="logo">
             </div>
-            <div class="footer__text">
-                <p class="footer__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-            </div>
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="footer__icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="contact-form">
+                <form name="submit-to-google-sheet" class="form">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Full Name" id="name" name="Name">
+                        <label for="name" class="form__label">Full Name</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Email Address" id="email" name="Email" required>
+                        <label for="email" class="form__label">Email Address</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea name="Message" id="message" cols="30" rows="10" class="form__input" placeholder="Message"></textarea>
+                        <label for="message" class="form__label">Message</label>
+                    </div>
+                    <div class="form__group">
+                        <button class="btn btn--white">Send</button>
+                    </div>
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
