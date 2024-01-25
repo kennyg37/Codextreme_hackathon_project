@@ -1,9 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-import homepage from './components/homepage'
+import Homepage from './components/Homepage'
 
 function App() {
-<div><homepage/></div>
+<div><Homepage/></div>
   
 }
 export default App

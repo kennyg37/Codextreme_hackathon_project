@@ -1,15 +1,8 @@
 import React from 'react'
 
-const homepage = () => {
+const Homepage = () => {
   return (
-    <>
-        <div className='nav-head'>
-            <ul>
-                <li>Home</li>
-            </ul>
-        </div>
-
-    </>
+    <h1>Hello</h1>
   )
 }
 
