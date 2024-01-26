@@ -6,10 +6,19 @@
     box-sizing: border-box;
 }
 
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4%;
+    margin: 4% 4%;
+}
+
 .container {
-    width: 40%;
+    width: 100%;
     background-color: rgb(185, 182, 182);
     font-family: poppins;
+    border-radius: 7px;
+    color: rgb(67, 64, 64);
 }
 
 .profile-description h2, p, .button-1 {
