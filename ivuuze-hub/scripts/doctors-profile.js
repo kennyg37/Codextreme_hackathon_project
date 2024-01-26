@@ -7,5 +7,3 @@ function myProfile() {
     }
     document.getElementById("p").innerHTML = `Name:${firstNames.name} \n Phone:${firstNames.phoneNumber}`;
 }
-
-

@@ -74,3 +74,16 @@
     font-weight: 600;
 }
 
+.arrow p{
+    gap:2%;
+    color: rgb(142, 59, 59);
+    background-color: rgb(74, 183, 183);
+}
+
+.arrow p:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+
