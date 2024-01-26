@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="menu">
-            <img src="images/logo.jpg" alt="logo" class="logo">
+            <h3 class="logo">IVUUZE</h3>
             <div class="navigation">
                 <nav class="navbar">
                     <ul>
@@ -97,7 +97,7 @@
                     <p class="doc-login__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                     <button id="openSignupModal" class="buttons">Login</button>
                 </div>
-                <span><a href="">Sign up<span> here</span>?</a></span>
+                <span><a href="/html/sign-up.html" target="_blank" onclick="opensigninmodal()">Sign up<span style="color:#4ca0bc;"> here</span>?</a></span>
             </div>
             <div class="login-tile">
                     <i class="fa-solid fa-hospital-user"></i>
@@ -106,7 +106,29 @@
                     <p class="patient-login__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                     <button id="openSignupModal2" class="buttons">Login</button>
                 </div>
-                <span><a href="" onclick="opensigninmodal()">Sign up<span style="color:#4ca0bc;"> here</span>?</a></span>
+                <div id="signupModal" class="modal">
+                    <div class="modal-content">
+                        
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <!-- Signup Form  -->
+                        <h1>Login</h1>
+                        <form id="signupForm">
+                            
+                            <!-- form fields -->
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+            
+                            <button type="submit" class="buttons">Login</button>
+                        </form>
+                    </div>
+                </div>
+                <span><a href="/html/sign-up.html" target="_blank" onclick="opensigninmodal()">Sign up<span style="color:#4ca0bc;"> here</span>?</a></span>
             </div>
         </div>
     </div>

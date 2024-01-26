@@ -6,6 +6,7 @@
   font-family: Poppins, sans-serif;
 }
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -31,7 +32,6 @@ body {
 
 .logo {
   float: left; 
-  margin: 22;
   font-family: poppin;
   
 }
@@ -327,9 +327,36 @@ color: #ffff;
   margin-left: 125px;
 }
 
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  width: 75vh;
+  padding: 50px;
+  margin-top: 30px;
+  gap: 20px;
+  
+}
+#signupForm input{
+  border: 2px solid #4ca0bc;
+  width: 50vh;
+  border-radius: 16px;
+  height: 25px;
+}
+.modal-content h1{
+  margin-right: 50px;
+}
+
+#signupForm button{
+  width: 75px;
+  margin-top: 20px;
+}
+
 /* footer */
 
 #footer {
   background: rgb(222, 223, 224);
   height: 100vh;
+  
 }
+
