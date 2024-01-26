@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font-family: Poppins, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #0245a3;
+}
+.upper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  margin-left: 20px;
+  margin-top: -10px;
+}
+.logo-txt {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.client {
+  position: relative;
+  left: 60%;
+}
+button {
+  position: relative;
+  background: transparent;
+  top: 12px;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  justify-content: space-between;
+}
+button:hover {
+  background: #1056b9;
+  color: #fff;
+  border-radius: 5px;
+}
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.logout {
+  position: relative;
+  left: 65%;
+  top: 12px;
+  padding: 8px;
+  height: 40px;
+}
+input[type="submit"] {
+  font-size: 16px;
+  background: transparent;
+  color: #fff;
+}
+.logout:hover {
+  background: #1056b9;
+  color: #fff;
+  border-radius: 5px;
+}
+.search-bx {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.search-bx h1 {
+  font-size: 56px;
+  color: #fff;
+}
+.search-bx input {
+  width: 600px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px rgba(26, 25, 26, 0.933);
+}
