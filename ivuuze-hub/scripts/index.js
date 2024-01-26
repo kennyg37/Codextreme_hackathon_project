@@ -27,3 +27,15 @@ window.addEventListener('click', function(event) {
         closeModal();
     }
 });
+document.getElementById('openSignupModal2').addEventListener('click', function() {
+    document.getElementById('signupModal').style.display = 'block';
+});
+function closeModal() {
+    document.getElementById('signupModal').style.display = 'none';
+}
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('signupModal')) {
+        closeModal();
+    }
+});
