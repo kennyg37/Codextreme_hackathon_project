@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   border: 0;
-  font-family: Poppins, sans-serif ;
+  font-family: Poppins, sans-serif;
 }
 
 html{
@@ -200,7 +200,7 @@ padding: 5px;
 margin-left: 5px;
 color: #ffff;
 }
-.services{
+.services {
   display: flex;
   gap: 30px;
   margin-top: 30px;
