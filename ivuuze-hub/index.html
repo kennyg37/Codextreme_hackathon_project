@@ -27,24 +27,27 @@
     </div>
     <div class="intro" id="intro">
         <div class="container">
-            <div class="header__text">
-                <h1 class="header__primary">Empowering Wellness, Inspiring Lives; Your Journey to Health Starts Here.</h1>
-                <button><a href="#" class="btn btn--white">Explore</a></button>
+            <div class="introduction">
+                <div class="header__text">
+                    <h1>Empowering Wellness, Inspiring Lives; Your Journey to Health Starts Here.</h1>
+                    <button><a href="#section1" class="btn btn--white">Explore</a></button>
+                </div>
+                <div class="header__img">
+                    <img src="https://images.pexels.com/photos/5327649/pexels-photo-5327649.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </div>
             </div>
-            <div class="header__img">
-                <img src="https://images.pexels.com/photos/5327649/pexels-photo-5327649.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
             </div>
-        </div>
     </div>
     <div id="section1">
         <div class="container">
             <div class="paragraph">
-                <p>Ivuuze is a cross-platform that connects that connects those of you who are in need of health services and those who provides those services</p>
+                <p class="animated-p">Ivuuze is a cross-platform that connects that connects those of you who are in need of health services and those who provides those services</p>
             </div>
         </div>
     </div>
     <div id="services-summary">
         <div class="container">
+            <h1>We link you to:</h1>
             <div class="services">
                 <div class="service">
                     <div class="service__icon">
@@ -83,62 +86,50 @@
                     </div>
             </div>
         </div>
+        <button class="buttons seemore-button">See more</button>
     </div>
     <div id="login-tiles">
-        <div class="container">
-            <div class="doc-login">
-                <div class="doc-login__icon">
+        <div class="container log-container">
+            <div class="login-tile">
                     <i class="fa-solid fa-user-doctor"></i>
-                </div>
-                <div class="doc-login__text">
+                <div class="login-text">
                     <h3 class="doc-login__heading">Doctor Login</h3>
                     <p class="doc-login__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <button id="openSignupModal">Login</button>
+                    <button id="openSignupModal" class="buttons">Login</button>
                 </div>
+                <span><a href="">Sign up<span> here</span>?</a></span>
             </div>
-            <div class="patient-login">
-                <div class="patient-login__icon">
+            <div class="login-tile">
                     <i class="fa-solid fa-hospital-user"></i>
-                </div>
-                <div class="patient-login__text">
+                <div class="login-text">
                     <h3 class="patient-login__heading">Patient Login</h3>
                     <p class="patient-login__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <button id="openSignupModal">Login</button>
+                    <button id="openSignupModal2" class="buttons">Login</button>
                 </div>
-            </div>
-            <div id="signupModal" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal()">&times;</span>
-                    <!-- Signup Form  -->
-                    <form id="signupForm">
-                        <!-- form fields -->
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
-        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-        
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-        
-                        <button type="submit">Sign Up</button>
-                    </form>
-                </div>
+                <span><a href="" onclick="opensigninmodal()">Sign up<span style="color:#4ca0bc;"> here</span>?</a></span>
             </div>
         </div>
     </div>
-    <div id="footer">
-        <div class="container">
-            <div class="footer__logo">
-                <img src="images/logo.jpg" alt="logo">
-            </div>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="footer__icon"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="horizantal-line"></div>
+            <div id="footer">
+                <div class="container-footer">
+                    <div class="contacts spaces">
+                        <h1 class="contacts-title">Contacts</h1>
+                        <h3 class="location-header style">ALU RWANDA Campus</h3>
+                        <p class="campus-location style">Bumbogo, Kigali Innovation City, Next to Azam, Kigali, Rwanda</p>
+                        <p class="campus-tel style">Phone: +250 784 650 219</p>
+                        <p class="campus-email style">Email: ivuuze@gmail.com</p>
+                    </div>
+                    <div class="pages spaces line">
+                        <p>Mission</p>
+                        <p>Services</p>
+                        <p>Meet the team</p>
+                        <p>FAQ</p>
+                    </div>
+                    <div class="map spaces">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.553491630597!2d30.150342673961305!3d-1.9306310980518278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca77688d3131f%3A0x3a65f6d29a33c0d3!2sAfrican%20Leadership%20University!5e0!3m2!1sen!2srw!4v1706184103213!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                    </div>
             </div>
        <!--     <div class="contact-form">
                 <form name="submit-to-google-sheet">
@@ -158,8 +149,9 @@
                 </form>
                 <span id="msg"></span>
             </div>
-        </div>
-    </div> -->
+        </div> -->
+    </footer> 
+<script src="scripts/animations.js"></script>
 <script src="scripts/index.js"></script>
 </body>
 </html>
