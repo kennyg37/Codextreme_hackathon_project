@@ -27,6 +27,20 @@
     align-items: center;
 }
 
+.icons {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: rgb(37, 37, 152);
+    gap: 2%;
+    
+}
+
+.star5, .star4, .star3 {
+    color: rgb(91, 90, 90);
+}
+
 
 .profile-image img {
     width: 100%;
@@ -51,5 +65,12 @@
     background-color: black;
     border: none;
     transition-delay: 0.1s;
+}
+
+#p {
+    text-align: center;
+    padding: 3%;
+    color: rgb(28, 79, 188);
+    font-weight: 600;
 }
 
