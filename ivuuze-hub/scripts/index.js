@@ -27,15 +27,11 @@ window.addEventListener('click', function(event) {
         closeModal();
     }
 });
-document.getElementById('openSignupModal2').addEventListener('click', function() {
-    document.getElementById('signupModal').style.display = 'block';
-});
-function closeModal() {
-    document.getElementById('signupModal').style.display = 'none';
-}
-
-window.addEventListener('click', function(event) {
-    if (event.target === document.getElementById('signupModal')) {
-        closeModal();
+function checkpassword(){
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirm-password").value;
+    if (password !== confirmPassword) {
+        alert('Passwords do not match.');
+        return;
     }
-});
+}

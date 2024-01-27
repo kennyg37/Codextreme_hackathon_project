@@ -19,7 +19,6 @@
                     <li><a href="html/about.html">About<box-icon name='chevron-down'></box-icon></a></li>
                     <li><a href="#">Services<box-icon name='chevron-down'></box-icon></a></li>
                     <li  style="margin-top: 5px;"><a href="#">Home</a></li>
-
                 </ul>
             </nav>
         </div>
@@ -27,6 +26,12 @@
     <div class="signup-container">
         <h2 class="signup-title">Sign Up</h2>
         <form class="signup-form">
+            <label for="userType" class="signup-label">I am a:</label>
+            <select id="userType" name="userType" class="signup-input">
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+            </select>
+
             <label for="username" class="signup-label">Username:</label>
             <input type="text" id="username" name="username" class="signup-input" required>
 
@@ -35,8 +40,20 @@
 
             <label for="confirm-password" class="signup-label">Confirm Password:</label>
             <input type="password" id="confirm-password" name="confirm-password" class="signup-input" required>
-            <p>SDFSL</p>
-            <button type="submit" class="signup-button">Sign Up</button>
+
+            <div id="doctorSection" style="display: none;">
+                <label for="licenseUpload" class="signup-label">Upload License:</label>
+                <input type="file" id="licenseUpload" name="licenseUpload" class="signup-input" accept=".pdf, .jpg, .jpeg" required>
+            </div>
+    
+            <!-- Additional sections for patients -->
+            <div id="patientSection" style="display: none;">
+                <label for="idUpload" class="signup-label">Upload ID (JPG or PDF):</label>
+                <input type="file" id="idUpload" name="idUpload" class="signup-input" accept=".pdf, .jpg, .jpeg" required>
+            </div>
+    
+            <p><input type="checkbox" id="termsCheckbox" required> Click this box to agree to our terms and policies</p>
+            <button  type="button" class="signup-button" onclick="signUp(); checkpassword()"><a href="patient.html"></a>Sign Up</button>
         </form>
     </div>
     <div id="footer">
@@ -58,29 +75,9 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.553491630597!2d30.150342673961305!3d-1.9306310980518278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca77688d3131f%3A0x3a65f6d29a33c0d3!2sAfrican%20Leadership%20University!5e0!3m2!1sen!2srw!4v1706184103213!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-            </div>
     </div>
-<!--     <div class="contact-form">
-        <form name="submit-to-google-sheet">
-            
-                <input type="text" class="form__input" placeholder="Name" id="name" name="Name">
-                <label for="name" class="form__label">Full Name</label>
-            
-                <input type="email" class="form__input" placeholder="Email Address" id="email" name="Email" required>
-                <label for="email" class="form__label">Email Address</label>
-            
-                <textarea name="Message" id="message" cols="30" rows="10" class="form__input" placeholder="Message"></textarea>
-                
-            
-            
-                <button class="btn btn--white">Send</button>
-            </div>
-        </form>
-        <span id="msg"></span>
-    </div>
-</div> -->
-</footer> 
-<script src="scripts/animations.js"></script>
-<script src="scripts/index.js"></script>
+    
+    <script src="scripts/index.js"></script>
+    <script src="scripts/signup.js"></script>
 </body>
 </html>

@@ -95,7 +95,7 @@
                 <div class="login-text">
                     <h3 class="doc-login__heading">Doctor Login</h3>
                     <p class="doc-login__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <button id="openSignupModal" class="buttons">Login</button>
+                    <button id="openSignupModal" class="buttons" onclick="signIn()">Login</button>
                 </div>
                 <span><a href="/html/sign-up.html" target="_blank" onclick="opensigninmodal()">Sign up<span style="color:#4ca0bc;"> here</span>?</a></span>
             </div>
@@ -108,27 +108,22 @@
                 </div>
                 <div id="signupModal" class="modal">
                     <div class="modal-content">
-                        
                         <span class="close" onclick="closeModal()">&times;</span>
-                        <!-- Signup Form  -->
+                        <!-- Signup Form -->
                         <h1>Login</h1>
-                        <form id="signupForm">
-                            
+                        <form id="loginForm">
                             <!-- form fields -->
-                            <label for="username">Username:</label>
-                            <input type="text" id="username" name="username" required>
-            
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-            
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" required>
-            
-                            <button type="submit" class="buttons">Login</button>
+                            <label for="loginUsername">Username:</label>
+                            <input type="text" id="loginUsername" name="loginUsername" required>
+                
+                            <label for="loginPassword">Password:</label>
+                            <input type="password" id="loginPassword" name="loginPassword" required>
+                
+                            <button type="button" class="buttons login-button" onclick="checkpassword()">Login</button>
                         </form>
                     </div>
                 </div>
-                <span><a href="/html/sign-up.html" target="_blank" onclick="opensigninmodal()">Sign up<span style="color:#4ca0bc;"> here</span>?</a></span>
+                <span><a href="/html/sign-up.html" target="_blank">Sign up<span style="color:#4ca0bc;"> here</span>?</a></span>
             </div>
         </div>
     </div>
